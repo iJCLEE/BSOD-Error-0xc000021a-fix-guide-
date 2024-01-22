@@ -44,6 +44,7 @@ How did i manage to fix this?
 3./> Subsequently, I accessed "Troubleshoot" > "Advanced Options" > "Command Prompt."
 
 Commands:
+
 $ C: 
 
 - Navigating to the C: directory, which houses the system32 folder, I encountered Bitlocker blocking access. 
