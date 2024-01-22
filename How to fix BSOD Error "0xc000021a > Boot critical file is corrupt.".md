@@ -95,8 +95,8 @@ $ chkdsk /f /r
 Results: Wait until the scan and fix are complete. Reboot and check if the issues are resolved. If not, continue reading. 
 (This did not fixed for me yet.)
 
-Commands info:
-? /f = fix (Fix errors)
+Commands info:   
+? /f = fix (Fix errors)   
 ? /r = recover (Locates "bad" sectors on the disk, and "recovers readable information")
 
 
@@ -114,9 +114,9 @@ Results: Wait for the "restorehealth" operation to complete.
 - Try rebooting the computer. If issues persist, continue reading.
 (This did not fixed for me yet.)
 
-Commands info:
-? Dism.exe = Deployment Image Service and Management (tool)
-? /image:(directory):\ = choose your system32 directory (mine is C:)
+Commands info:   
+? Dism.exe = Deployment Image Service and Management (tool)   
+? /image:(directory):\ = choose your system32 directory (mine is C:)   
 ? /cleanup-image = This command reduce the size of the WinSxS folder 
 
 
@@ -144,8 +144,8 @@ Results: Wait for the "scanos" operation to complete. [check photo]
 
 ![IMG_5291](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/cf14a54f-256f-4ba0-ac72-c56fdc95ac64)
 
-Commands info:
-? bootrec /scanos = scans all disks on the computer for Windows installations and displays any that are found.
+Commands info:   
+? bootrec /scanos = scans all disks on the computer for Windows installations and displays any that are found.   
 ? bootrec /rebuildbcd = rebuilds the Boot Configuration Data (BCD) store. The BCD is a database that contains boot-related information, such as the installed operating systems and their boot parameters.
 
 
