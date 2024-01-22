@@ -43,8 +43,7 @@ How did i manage to fix this?
 
 3./> Subsequently, I accessed "Troubleshoot" > "Advanced Options" > "Command Prompt."
 
-Commands:
-
+Commands:   
 $ C: 
 
 - Navigating to the C: directory, which houses the system32 folder, I encountered Bitlocker blocking access. 
@@ -58,7 +57,7 @@ NOTE! The Recovery Key can be obtained from the Microsoft website by logging in 
 
 "Locate to system32 directory ( C: ), and type" > $ manage-bde -off
 
-Commands:
+Commands:   
 $ C:
 $ manage-bde -off
 
