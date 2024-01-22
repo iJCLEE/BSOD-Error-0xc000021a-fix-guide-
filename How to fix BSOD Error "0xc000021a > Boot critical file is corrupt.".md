@@ -155,7 +155,7 @@ Commands info:
 - However, after leaving my laptop overnight and waking up in the morning, I faced the BSOD once again. 
 - Fortunately, using "7) Disable driver signature enforcement" proved effective in resolving the issue temporarily for me. 
 
-./> Unfortunately, despite the steps taken thus far, I rebooted the system, and regrettably, the file corruptions persist.
+./> Unfortunately, despite the steps taken thus far, the file corruptions persist.
 
 ./> I will continue to update this guide until I find a complete solution to remove all the corrupted files causing this BSOD.
 
