@@ -26,7 +26,7 @@ How did i manage to fix this?
 
 
 1./> Initially, I tried accessing "Troubleshoot" > "Advanced Settings" > "Startup Settings" > 4) Safe Mode or 5) Safe Mode with Networking. 
-However, each time I selected one of these options, it rebooted to the same Blue Screen of Death (BSOD). [check screenshot]
+- However, each time I selected one of these options, it rebooted to the same Blue Screen of Death (BSOD). [check screenshot]
 
 ![BSOD1](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/b804def4-8fbc-45d7-930f-d4b8026e8683)
 
