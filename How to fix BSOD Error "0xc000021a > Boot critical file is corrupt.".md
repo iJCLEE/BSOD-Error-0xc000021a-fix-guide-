@@ -49,10 +49,10 @@ $ C:
 - Navigating to the C: directory, which houses the system32 folder, I encountered Bitlocker blocking access. 
 To proceed, it required either the "Windows password (not PIN)" or a "Recovery Key." 
 
-NOTE! The Recovery Key can be obtained from the Microsoft website by logging in with your Windows-associated email account.)
-
-
-
+NOTE! The Recovery Key can be obtained from the Microsoft website by logging in with your Windows-associated email account.)   
+ 
+ 
+ 
 4./> After successfully unlocking the C: directory, I disabled Bitlocker entirely to facilitate uninterrupted repair.
 
 "Locate to system32 directory ( C: ), and type" > $ manage-bde -off
@@ -66,9 +66,9 @@ or
 $ manage-bde -off C:
 
 - Bitlocker is a security feature designed to protect data in case of theft or loss. It can be re-enabled after resolving the boot issues.
-
-
-
+ 
+ 
+ 
 5./> With Bitlocker disabled, I opened the Command Prompt and used the following commands to open and examine the SrtTrail.txt file:
 
 $ notepad 
@@ -85,9 +85,9 @@ $ sfc /scannow
 
 Results: "Windows Resource Protection Could Not Perform the Requested Operation."
 - The possible reason could be a corrupted file preventing Windows Resource Protection (WRP) from functioning.
-
-
-
+ 
+ 
+ 
 7./> Next, I ran the following command to check and fix errors on the disk:
 
 $ chkdsk /f /r 
@@ -98,9 +98,9 @@ Results: Wait until the scan and fix are complete. Reboot and check if the issue
 Commands info:   
 ? /f = fix (Fix errors)   
 ? /r = recover (Locates "bad" sectors on the disk, and "recovers readable information")
-
-
-
+ 
+ 
+ 
 8./> I attempted to revert pending actions and restore health using DISM:
 Commands:
 
@@ -118,9 +118,9 @@ Commands info:
 ? Dism.exe = Deployment Image Service and Management (tool)   
 ? /image:(directory):\ = choose your system32 directory (mine is C:)   
 ? /cleanup-image = This command reduce the size of the WinSxS folder 
-
-
-
+ 
+ 
+ 
 9./> I ran a modified sfc command with specific offbootdir and offwindir parameters:
 
 $ sfc /scannow /offbootdir=C:\ /offwindir=C:\Windows
@@ -147,9 +147,9 @@ Results: Wait for the "scanos" operation to complete. [check photo]
 Commands info:   
 ? bootrec /scanos = scans all disks on the computer for Windows installations and displays any that are found.   
 ? bootrec /rebuildbcd = rebuilds the Boot Configuration Data (BCD) store. The BCD is a database that contains boot-related information, such as the installed operating systems and their boot parameters.
-
-
-
+ 
+ 
+ 
 11./> After executing all the commands mentioned above, I continued to encounter the Blue Screen of Death (BSOD) upon reboot. 
 - As a final attempt, I opted for the last available option in "Startup Settings" - "7) Disable driver signature enforcement." This allowed my laptop to reboot normally, and I regained access to my laptop. Even after several subsequent reboots, my laptop continued to start up without issues.
 - However, after leaving my laptop overnight and waking up in the morning, I faced the BSOD once again. 
