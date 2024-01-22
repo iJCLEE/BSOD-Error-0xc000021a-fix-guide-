@@ -126,7 +126,7 @@ Commands info:
 
 $ sfc /scannow /offbootdir=C:\ /offwindir=C:\Windows
 
-Results: Fortunately, this alternative sfc command worked for me. 
+Results: Fortunately, this alternative sfc command worked for me, it says "Windows Resource Protection did not find any integrity violations" - Indicating that it did not find any violations in the integrity of the Windows system files. . 
 Allow the system to complete the scan operation. However, it did not fixed BSOD in my case. [check photo]
 
 ![BSOD4](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/f55f6cfb-150d-4e4d-8751-a1ccfd118aba)
