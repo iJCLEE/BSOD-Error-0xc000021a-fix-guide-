@@ -22,6 +22,7 @@ The error displayed was "0xc000021a," indicating that a critical boot file is co
 
 NOTE! - My guide is not intended for disassembled laptops. If you have a built PC or a laptop where you've changed SSD, RAM, or any other hardware components, your issues might be different. Always check the error code and either search for the reason on Google or inspect the logs after using "Startup Repair."
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 How did i manage to fix this?
 
@@ -31,7 +32,7 @@ How did i manage to fix this?
 
 ![BSOD1](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/b804def4-8fbc-45d7-930f-d4b8026e8683)
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2./> Following that, I initiated "Troubleshoot" > "Advanced Settings" > "Startup Repair."
 - Despite its attempt to diagnose and repair, the issue persisted.
@@ -39,7 +40,7 @@ How did i manage to fix this?
 
 ![IMG_5292](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/d896dca6-1d55-4824-aad3-27b3e6f4675c)
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3./> Subsequently, I accessed "Troubleshoot" > "Advanced Options" > "Command Prompt."
 
@@ -51,7 +52,7 @@ To proceed, it required either the "Windows password (not PIN)" or a "Recovery K
 
 NOTE! The Recovery Key can be obtained from the Microsoft website by logging in with your Windows-associated email account.)   
  
- 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
  
 4./> After successfully unlocking the C: directory, I disabled Bitlocker entirely to facilitate uninterrupted repair.
 
@@ -67,7 +68,7 @@ $ manage-bde -off C:
 
 - Bitlocker is a security feature designed to protect data in case of theft or loss. It can be re-enabled after resolving the boot issues.
  
- 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
  
 5./> With Bitlocker disabled, I opened the Command Prompt and used the following commands to open and examine the SrtTrail.txt file:
 
@@ -77,7 +78,7 @@ $ notepad
 
 ![IMG_5294](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/c123287d-7f6f-4405-874c-e3ce5fb158ca)
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6./> I attempted the common file system fix command:
 
@@ -86,7 +87,7 @@ $ sfc /scannow
 Results: "Windows Resource Protection Could Not Perform the Requested Operation."
 - The possible reason could be a corrupted file preventing Windows Resource Protection (WRP) from functioning.
  
- 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
  
 7./> Next, I ran the following command to check and fix errors on the disk:
 
@@ -99,7 +100,7 @@ Commands info:
 ? /f = fix (Fix errors)   
 ? /r = recover (Locates "bad" sectors on the disk, and "recovers readable information")
  
- 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
  
 8./> I attempted to revert pending actions and restore health using DISM:
 Commands:
@@ -119,7 +120,7 @@ Commands info:
 ? /image:(directory):\ = choose your system32 directory (mine is C:)   
 ? /cleanup-image = This command reduce the size of the WinSxS folder 
  
- 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
  
 9./> I ran a modified sfc command with specific offbootdir and offwindir parameters:
 
@@ -130,9 +131,9 @@ Allow the system to complete the scan operation. However, it did not fixed BSOD 
 
 ![IMG_5287](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/e0fff41d-f875-425c-ae59-de5fa4f843df)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-10. I haven't given up yet, and I'm going to run two additional commands:
+10./> I haven't given up yet, and I'm going to run two additional commands:
 
 $ bootrec /scanos
 
@@ -148,7 +149,7 @@ Commands info:
 ? bootrec /scanos = scans all disks on the computer for Windows installations and displays any that are found.   
 ? bootrec /rebuildbcd = rebuilds the Boot Configuration Data (BCD) store. The BCD is a database that contains boot-related information, such as the installed operating systems and their boot parameters.
  
- 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
  
 11./> After executing all the commands mentioned above, I continued to encounter the Blue Screen of Death (BSOD) upon reboot. 
 - As a final attempt, I opted for the last available option in "Startup Settings" - "7) Disable driver signature enforcement." This allowed my laptop to reboot normally, and I regained access to my laptop. Even after several subsequent reboots, my laptop continued to start up without issues.
