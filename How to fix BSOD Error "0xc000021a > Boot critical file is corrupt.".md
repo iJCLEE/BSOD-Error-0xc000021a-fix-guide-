@@ -1,4 +1,4 @@
- ./> First, try the following step before proceeding to the other steps below:
+./> First, try the following step before proceeding to the other steps below:
 - This may resolve the issue immediately for you, or you may need to follow the entire guide to identify the actual problem if this step doesn't work.   
 - In my case, the issue stemmed from either drivers or a corrupted Windows update, which I am still investigating. 
 
@@ -24,9 +24,6 @@ The error displayed was "0xc000021a," indicating that a critical boot file is co
 NOTE! - My guide is not intended for disassembled laptops. If you have a built PC or a laptop where you've changed SSD, RAM, or any other hardware components, your issues might be different. Always check the error code and either search for the reason on Google or inspect the logs after using "Startup Repair."
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-How did i manage to fix this?
-
 
 1./> Initially, I tried accessing "Troubleshoot" > "Advanced Settings" > "Startup Settings" > 4) Safe Mode or 5) Safe Mode with Networking. 
 - However, each time I selected one of these options, it rebooted to the same Blue Screen of Death (BSOD). [check photo]
