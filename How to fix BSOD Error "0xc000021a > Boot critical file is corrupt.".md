@@ -1,10 +1,10 @@
-0./> First, try the following step before proceeding to the other steps below:
+ ./> First, try the following step before proceeding to the other steps below:
 - This may resolve the issue immediately for you, or you may need to follow the entire guide to identify the actual problem if this step doesn't work.   
 - In my case, the issue stemmed from either drivers or a corrupted Windows update, which I am still investigating. 
 
   (Ongoing process since 20.1.2024 - I will provide updates as soon as I have completely resolved these issues.)
 
-Navigate to "Troubleshoot" > "Advanced options" > "Startup Settings" > (Press F7) - 7) Disable driver signature enforcement.
+0./> Navigate to "Troubleshoot" > "Advanced options" > "Startup Settings" > (Press F7) - 7) Disable driver signature enforcement.
 - This allowed me to boot into Windows normally, enabling me to attempt manual fixes. I will share my final results once I have completely resolved the file corruption issues.
 
 Note! - I tried all the options listed below before disabling driver signature enforcement. If this step doesn't yield immediate results for you, follow my guide and complete all of the preceding options before resorting to this one.
