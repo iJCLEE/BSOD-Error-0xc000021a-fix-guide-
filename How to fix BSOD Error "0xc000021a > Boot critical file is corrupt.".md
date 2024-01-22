@@ -1,6 +1,7 @@
-First, try the following step before proceeding to the other steps below:
+0./> First, try the following step before proceeding to the other steps below:
 - This may resolve the issue immediately for you, or you may need to follow the entire guide to identify the actual problem if this step doesn't work.
-- In my case, the issue stemmed from either drivers or a corrupted Windows update, which I am still investigating. (Ongoing process since 20.1.2024)
+- In my case, the issue stemmed from either drivers or a corrupted Windows update, which I am still investigating. 
+(Ongoing process since 20.1.2024 - I will provide updates as soon as I have completely resolved these issues.)
 
 Navigate to "Troubleshoot" > "Advanced options" > "Startup Settings" > (Press F7) - 7) Disable driver signature enforcement.
 - This allowed me to boot into Windows normally, enabling me to attempt manual fixes. I will share my final results once I have completely resolved the file corruption issues.
@@ -26,7 +27,7 @@ How did i manage to fix this?
 
 
 1./> Initially, I tried accessing "Troubleshoot" > "Advanced Settings" > "Startup Settings" > 4) Safe Mode or 5) Safe Mode with Networking. 
-- However, each time I selected one of these options, it rebooted to the same Blue Screen of Death (BSOD). [check screenshot]
+- However, each time I selected one of these options, it rebooted to the same Blue Screen of Death (BSOD). [check photo]
 
 ![BSOD1](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/b804def4-8fbc-45d7-930f-d4b8026e8683)
 
@@ -34,7 +35,7 @@ How did i manage to fix this?
 
 2./> Following that, I initiated "Troubleshoot" > "Advanced Settings" > "Startup Repair."
 - Despite its attempt to diagnose and repair, the issue persisted.
-- I then captured a photo of the log file location: "C:\Windows\System32\Logfiles\Srt\SrtTrail.txt" to investigate the cause of the BSOD. [check screenshot]
+- I then captured a photo of the log file location: "C:\Windows\System32\Logfiles\Srt\SrtTrail.txt" to investigate the cause of the BSOD. [check photo]
 
 ![IMG_5292](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/d896dca6-1d55-4824-aad3-27b3e6f4675c)
 
@@ -72,7 +73,7 @@ $ manage-bde -off C:
 
 $ notepad 
 
-(In Notepad, navigate to "File" > "Open..." > Locate "C:\Windows\System32\Logfiles\Srt\SrtTrail.txt" and open the file to check for the section indicating the cause.) [check screenshot]
+(In Notepad, navigate to "File" > "Open..." > Locate "C:\Windows\System32\Logfiles\Srt\SrtTrail.txt" and open the file to check for the section indicating the cause.) [check photo]
 
 ![IMG_5294](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/c123287d-7f6f-4405-874c-e3ce5fb158ca)
 
@@ -125,7 +126,7 @@ Commands info:
 $ sfc /scannow /offbootdir=C:\ /offwindir=C:\Windows
 
 Results: Fortunately, this alternative sfc command worked for me. 
-Allow the system to complete the scan operation. However, it did not fixed BSOD in my case. [check screenshot]
+Allow the system to complete the scan operation. However, it did not fixed BSOD in my case. [check photo]
 
 ![IMG_5287](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/e0fff41d-f875-425c-ae59-de5fa4f843df)
 
@@ -139,7 +140,7 @@ Results: Wait for the "scanos" operation to complete. Then next commands:
 
 $ bootrec /rebuildbcd
 
-Results: Wait for the "scanos" operation to complete. [check screenshot]
+Results: Wait for the "scanos" operation to complete. [check photo]
 
 ![IMG_5291](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/cf14a54f-256f-4ba0-ac72-c56fdc95ac64)
 
