@@ -76,7 +76,7 @@ $ notepad
 
 (In Notepad, navigate to "File" > "Open..." > Locate "C:\Windows\System32\Logfiles\Srt\SrtTrail.txt" and open the file to check for the section indicating the cause.) [check photo]
 
-![IMG_5294](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/c123287d-7f6f-4405-874c-e3ce5fb158ca)
+![BSOD3](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/1f37b509-4b69-4958-9c7a-7f642c47e923)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
