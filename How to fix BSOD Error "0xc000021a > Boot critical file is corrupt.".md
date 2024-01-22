@@ -38,7 +38,7 @@ How did i manage to fix this?
 - Despite its attempt to diagnose and repair, the issue persisted.
 - I then captured a photo of the log file location: "C:\Windows\System32\Logfiles\Srt\SrtTrail.txt" to investigate the cause of the BSOD. [check photo]
 
-![IMG_5292](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/d896dca6-1d55-4824-aad3-27b3e6f4675c)
+![BSOD2](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/7c2fdceb-6c46-4e67-991a-75a6fb50dcfd)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
