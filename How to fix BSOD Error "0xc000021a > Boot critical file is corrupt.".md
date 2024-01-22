@@ -151,15 +151,15 @@ Commands info:
 
 
 11./> After executing all the commands mentioned above, I continued to encounter the Blue Screen of Death (BSOD) upon reboot. 
-> As a final attempt, I opted for the last available option in "Startup Settings" - "7) Disable driver signature enforcement." This allowed my laptop to reboot normally, and I regained access to my laptop. Even after several subsequent reboots, my laptop continued to start up without issues.
+- As a final attempt, I opted for the last available option in "Startup Settings" - "7) Disable driver signature enforcement." This allowed my laptop to reboot normally, and I regained access to my laptop. Even after several subsequent reboots, my laptop continued to start up without issues.
 - However, after leaving my laptop overnight and waking up in the morning, I faced the BSOD once again. 
 - Fortunately, using "7) Disable driver signature enforcement" proved effective in resolving the issue temporarily for me. 
 
->>> Unfortunately, despite the steps taken thus far, I rebooted the system, and regrettably, the file corruptions persist. <<<
+./> Unfortunately, despite the steps taken thus far, I rebooted the system, and regrettably, the file corruptions persist.
 
->>> I will continue to update this guide until I find a complete solution to remove all the corrupted files causing this BSOD. <<<
+./> I will continue to update this guide until I find a complete solution to remove all the corrupted files causing this BSOD.
 
->>> If you have any questions or need assistance understanding this guide, feel free to leave a comment or reach out to me directly for support. <<<
+./> If you have any questions or need assistance understanding this guide, feel free to leave a comment or reach out to me directly for support.
 
 
 
