@@ -7,7 +7,7 @@
 0./> Navigate to "Troubleshoot" > "Advanced options" > "Startup Settings" > (Press F7) - 7) Disable driver signature enforcement.
 - This allowed me to boot into Windows normally, enabling me to attempt manual fixes. I will share my final results once I have completely resolved the file corruption issues.
 
-Note! - I tried all the options listed below before disabling driver signature enforcement. If this step doesn't yield immediate results for you, follow my guide and complete all of the preceding options before resorting to this one.
+Note! - I attempted all the options provided below before disabling driver signature enforcement. If this step doesn't produce immediate results for you, please follow my guide and execute all the previous options before resorting to this one.
 
 
 ![IMG_5258](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/15f86720-f3b5-40eb-b058-db12dd0a6d13)
