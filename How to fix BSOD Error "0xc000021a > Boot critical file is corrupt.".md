@@ -25,6 +25,8 @@ NOTE! - My guide is not intended for disassembled laptops. If you have a built P
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
+How did i manage to fix this?
+
 1./> Initially, I tried accessing "Troubleshoot" > "Advanced Settings" > "Startup Settings" > 4) Safe Mode or 5) Safe Mode with Networking. 
 - However, each time I selected one of these options, it rebooted to the same Blue Screen of Death (BSOD). [check photo]
 
