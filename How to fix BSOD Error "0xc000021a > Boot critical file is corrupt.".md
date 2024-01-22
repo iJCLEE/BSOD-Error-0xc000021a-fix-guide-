@@ -129,7 +129,7 @@ $ sfc /scannow /offbootdir=C:\ /offwindir=C:\Windows
 Results: Fortunately, this alternative sfc command worked for me. 
 Allow the system to complete the scan operation. However, it did not fixed BSOD in my case. [check photo]
 
-![IMG_5287](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/e0fff41d-f875-425c-ae59-de5fa4f843df)
+![BSOD4](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/f55f6cfb-150d-4e4d-8751-a1ccfd118aba)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
