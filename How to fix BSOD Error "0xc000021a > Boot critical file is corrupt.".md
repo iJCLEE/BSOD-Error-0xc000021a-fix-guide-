@@ -1,5 +1,5 @@
 0./> First, try the following step before proceeding to the other steps below:
-- This may resolve the issue immediately for you, or you may need to follow the entire guide to identify the actual problem if this step doesn't work.
+- This may resolve the issue immediately for you, or you may need to follow the entire guide to identify the actual problem if this step doesn't work.   
 - In my case, the issue stemmed from either drivers or a corrupted Windows update, which I am still investigating. 
 (Ongoing process since 20.1.2024 - I will provide updates as soon as I have completely resolved these issues.)
 
