@@ -4,7 +4,7 @@
 - This may resolve the issue immediately for you, or you may need to follow the entire guide to identify the actual problem if this step doesn't work.   
 - In my case, the issue stemmed from either drivers or a corrupted Windows update. 
 
-(I identified the issues — I discovered a corrupted Windows update hiding in the downloaded Windows update folder. I resolved it by deleting all the corrupted Windows update files, then proceeded to redownload the Windows update. After that, I successfully updated my laptop, and now everything is working perfectly!)
+- I identified the issues — I discovered a corrupted Windows update hiding in the downloaded Windows update folder. I resolved it by deleting all the corrupted Windows update files, then proceeded to redownload the Windows update. After that, I successfully updated my laptop, and now everything is working perfectly!
 
 
 0./> Navigate to "Troubleshoot" > "Advanced options" > "Startup Settings" > (Press F7) - 7) Disable driver signature enforcement.
