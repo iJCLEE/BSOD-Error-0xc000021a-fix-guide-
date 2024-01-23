@@ -1,13 +1,21 @@
+ (The ongoing process commenced on 20.1.2024, and was successfully completed on 23.1.2024)
+
 ./> First, try the following step before proceeding to the other steps below:
 - This may resolve the issue immediately for you, or you may need to follow the entire guide to identify the actual problem if this step doesn't work.   
-- In my case, the issue stemmed from either drivers or a corrupted Windows update, which I am still investigating. 
+- In my case, the issue stemmed from either drivers or a corrupted Windows update. 
 
-  (Ongoing process since 20.1.2024)
+(I identified the issues — I discovered a corrupted Windows update hiding in the downloaded Windows update folder. I resolved it by deleting all the corrupted Windows update files, then proceeded to redownload the Windows update. After that, I successfully updated my laptop, and now everything is working perfectly!)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 0./> Navigate to "Troubleshoot" > "Advanced options" > "Startup Settings" > (Press F7) - 7) Disable driver signature enforcement.
 - This allowed me to boot into Windows normally, enabling me to attempt manual fixes. I will share my final results once I have completely resolved the file corruption issues.
 
 Note! - I attempted all the options provided below before disabling driver signature enforcement. If this step doesn't produce immediate results for you, please follow my guide and execute all the previous options before resorting to this one.
+
+[When Windows boots up normally]
+
+./> Navigate to "C:\Windows\SoftwareDistribution\Download", and delete all the files related to Windows Update within the "Download" folder.
 
 
 ![IMG_5258](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/15f86720-f3b5-40eb-b058-db12dd0a6d13)
