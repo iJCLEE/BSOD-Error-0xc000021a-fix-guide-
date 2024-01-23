@@ -6,16 +6,22 @@
 
 (I identified the issues — I discovered a corrupted Windows update hiding in the downloaded Windows update folder. I resolved it by deleting all the corrupted Windows update files, then proceeded to redownload the Windows update. After that, I successfully updated my laptop, and now everything is working perfectly!)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 0./> Navigate to "Troubleshoot" > "Advanced options" > "Startup Settings" > (Press F7) - 7) Disable driver signature enforcement.
-- This allowed me to boot into Windows normally, enabling me to attempt manual fixes. I will share my final results once I have completely resolved the file corruption issues.
+- This allowed me to boot into Windows normally, enabling me to attempt manual fixes.
 
 Note! - I attempted all the options provided below before disabling driver signature enforcement. If this step doesn't produce immediate results for you, please follow my guide and execute all the previous options before resorting to this one.
 
 [When Windows boots up normally]
 
 ./> Navigate to "C:\Windows\SoftwareDistribution\Download", and delete all the files related to Windows Update within the "Download" folder.
+
+./> Do not restart the computer; instead, use the shutdown option and then boot it back up.
+
+./> After that you should wait to re-download windows updates, and then update Drivers, BIOS etc...
+
+NOTE! - My lapotp is Asus rog flow X13, so in your case might be different.    
+You can feel free to contact me if you are not sure what you should do, and you have same or different issues.
 
 
 ![IMG_5258](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/15f86720-f3b5-40eb-b058-db12dd0a6d13)
