@@ -60,6 +60,7 @@ NOTE! The Recovery Key can be obtained from the Microsoft website by logging in 
 
 Commands:   
 $ C:
+
 $ manage-bde -off
 
 or
