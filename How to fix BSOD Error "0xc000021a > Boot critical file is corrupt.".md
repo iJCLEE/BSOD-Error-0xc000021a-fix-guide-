@@ -18,10 +18,9 @@ Note! - I attempted all the options provided below before disabling driver signa
 
 ./> Do not restart the computer; instead, use the shutdown option and then boot it back up.
 
-./> After that you should wait to re-download windows updates, and then update Drivers, BIOS etc...
+./> Afterward, please wait to redownload Windows updates and proceed to update drivers, BIOS, etc.
 
-NOTE! - My lapotp is Asus rog flow X13, so in your case might be different.    
-You can feel free to contact me if you are not sure what you should do, and you have same or different issues.
+NOTE! - My laptop is an Asus ROG Flow X13, so your situation may vary. Feel free to reach out if you're uncertain about what steps to take, whether you're dealing with similar or different issues.
 
 
 ![IMG_5258](https://github.com/iJCLEE/BSOD-Error-0xc000021a-fix-guide-/assets/61095429/15f86720-f3b5-40eb-b058-db12dd0a6d13)
