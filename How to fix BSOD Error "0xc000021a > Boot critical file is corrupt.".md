@@ -174,7 +174,7 @@ Commands info:
 
 ./> Unfortunately, despite the steps taken thus far, the file corruptions persist.
 
-./> I will continue to update this guide until I find a complete solution to remove all the corrupted files causing this BSOD.
+./> I identified the issues — I discovered a corrupted Windows update hiding in the downloaded Windows update folder. I resolved it by deleting all the corrupted Windows update files, then proceeded to redownload the Windows update. After that, I successfully updated my laptop, and now everything is working perfectly!
 
 ./> If you have any questions or need assistance understanding this guide, feel free to leave a comment or reach out to me directly for support.
 
